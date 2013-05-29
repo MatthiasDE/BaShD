@@ -1,31 +1,43 @@
 BaShD
 =====
 
-Backup &amp; Shutdown Script for Windows (Powershell 2.0)
+Backup &amp; Shutdown Script for Windows (Powershell >=2.0)
+
+##Use at your own risk!
+This is a beta release with not all implemented features.
 
 ##Presumptions
 * Installed Robocopy<br>see Microsoft Downloads
-* Installed Powershell 2.0<br>see `$PSVersionTable.PSVersion`
+* Installed Powershell 2.0 or 3.0<br>see `$PSVersionTable.PSVersion`
 * Copy .ps1 in a local file folder
 * Check if execution of scripts is allowed with Get-ExecutionPolicy<br>You can change with `Set-ExecutionPolicy RemoteSigned -Confirm`
 
-## Manual
-This is a first experimental release. It just do all necessary environment checks and copies all necessary files monthly in a seperate folder.
+##Tested Windows Versions
+* Windows XP
+* Windows Vista
+* Windows 7
+* Windows 8
+
+##Features
+*Checks necessary environment and presumptions mentioned above
+*Copies all defined folders and files in seperate folders
+*Supports different systems over network via one central skript (including configuration)
+*Copy process paying attention to archive flag (in existing month)
+*Creates one new full archive for new month
+*File based copy log
+*Documented coding
+*Self-calling with higher user rights due to UAC (User Account Control) on Windows 7 and 8
 
 Please make sure that you adjust the parameters in the script for your environment.
 
 ## To-Dos
-* copy process paying attention to archive flag (existing month)
-* remove ugly percentage progress
-* improve logging feature
-* do some manual improvement and coding documentation
 * deletion of long term (1/2y), running and short term archive(1m)
 * ini file and or registry (thinking about different pros/cons)
 * installation script
 
 ## License (BaShD)
 
-	Copyright 2012 Matthias Link. 
+	Copyright 2013 Matthias Link. 
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
