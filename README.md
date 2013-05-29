@@ -19,14 +19,14 @@ This is a beta release with not all implemented features.
 * Windows 8
 
 ##Features
-*Checks necessary environment and presumptions mentioned above
-*Copies all defined folders and files in seperate folders
-*Supports different systems over network via one central skript (including configuration)
-*Copy process paying attention to archive flag (in existing month)
-*Creates one new full archive for new month
-*File based copy log
-*Documented coding
-*Self-calling with higher user rights due to UAC (User Account Control) on Windows 7 and 8
+* Checks necessary environment and presumptions mentioned above
+* Copies all defined folders and files in seperate folders
+* Supports different systems over network via one central skript (including configuration)
+* Copy process paying attention to archive flag (in existing month)
+* Creates one new full archive for new month
+* File based copy log
+* Documented coding
+* Self-calling with higher user rights due to UAC (User Account Control) on Windows 7 and 8
 
 Please make sure that you adjust the parameters in the script for your environment.
 
